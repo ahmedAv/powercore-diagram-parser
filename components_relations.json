@@ -1,0 +1,354 @@
+{
+    "rootPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "components": [
+        {
+            "name": "Stack",
+            "modelName": "Stack",
+            "position": {
+                "x": -80.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "dimensions": {
+                "L": 13.0,
+                "l": 13.0,
+                "H": 180.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "anchor": "ground"
+        },
+        {
+            "name": "Boiler",
+            "modelName": "Boiler",
+            "position": {
+                "x": -40.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "dimensions": {
+                "L": 35.0,
+                "l": 30.0,
+                "H": 70.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "anchor": "ground"
+        },
+        {
+            "name": "Steam Turbine",
+            "modelName": "SteamTurbine",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "dimensions": {
+                "L": 45.0,
+                "l": 10.0,
+                "H": 8.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "anchor": "ground"
+        },
+        {
+            "name": "Generator",
+            "modelName": "Generator",
+            "position": {
+                "x": 50.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "dimensions": {
+                "L": 12.0,
+                "l": 5.0,
+                "H": 6.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "anchor": "ground"
+        },
+        {
+            "name": "Condenser",
+            "modelName": "Condenser",
+            "position": {
+                "x": 50.0,
+                "y": -20.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "dimensions": {
+                "L": 25.0,
+                "l": 8.0,
+                "H": 6.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "anchor": "ground"
+        },
+        {
+            "name": "Pump",
+            "modelName": "Pump",
+            "position": {
+                "x": 80.0,
+                "y": -30.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "dimensions": {
+                "L": 5.0,
+                "l": 5.0,
+                "H": 5.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "anchor": "ground"
+        },
+        {
+            "name": "Cooling Tower",
+            "modelName": "CoolingTower",
+            "position": {
+                "x": 120.0,
+                "y": -10.0,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "dimensions": {
+                "L": 30.0,
+                "l": 30.0,
+                "H": 100.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "anchor": "ground"
+        }
+    ],
+    "relations": [
+        {
+            "from": "Boiler",
+            "to": "Stack",
+            "fromPosition": {
+                "x": -40.0,
+                "y": 0.0,
+                "z": 35.0
+            },
+            "toPosition": {
+                "x": -80.0,
+                "y": 0.0,
+                "z": 90.0
+            },
+            "connectionType": "pipe",
+            "modelName": null,
+            "rotation": null,
+            "scale": null,
+            "fromPort": null,
+            "toPort": null,
+            "group": null
+        },
+        {
+            "from": "Boiler",
+            "to": "Steam Turbine",
+            "fromPosition": {
+                "x": -22.5,
+                "y": 0.0,
+                "z": 35.0
+            },
+            "toPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "connectionType": "pipe",
+            "modelName": null,
+            "rotation": null,
+            "scale": null,
+            "fromPort": null,
+            "toPort": null,
+            "group": null
+        },
+        {
+            "from": "Steam Turbine",
+            "to": "Generator",
+            "fromPosition": {
+                "x": 22.5,
+                "y": 0.0,
+                "z": 4.0
+            },
+            "toPosition": {
+                "x": 44.0,
+                "y": 0.0,
+                "z": 3.0
+            },
+            "connectionType": "shaft",
+            "modelName": null,
+            "rotation": null,
+            "scale": null,
+            "fromPort": null,
+            "toPort": null,
+            "group": null
+        },
+        {
+            "from": "Steam Turbine",
+            "to": "Condenser",
+            "fromPosition": {
+                "x": 0.0,
+                "y": -5.0,
+                "z": 4.0
+            },
+            "toPosition": {
+                "x": 50.0,
+                "y": -16.0,
+                "z": 3.0
+            },
+            "connectionType": "pipe",
+            "modelName": null,
+            "rotation": null,
+            "scale": null,
+            "fromPort": null,
+            "toPort": null,
+            "group": null
+        },
+        {
+            "from": "Condenser",
+            "to": "Pump",
+            "fromPosition": {
+                "x": 62.5,
+                "y": -20.0,
+                "z": 3.0
+            },
+            "toPosition": {
+                "x": 80.0,
+                "y": -30.0,
+                "z": 2.5
+            },
+            "connectionType": "pipe",
+            "modelName": null,
+            "rotation": null,
+            "scale": null,
+            "fromPort": null,
+            "toPort": null,
+            "group": null
+        },
+        {
+            "from": "Pump",
+            "to": "Boiler",
+            "fromPosition": {
+                "x": 80.0,
+                "y": -25.0,
+                "z": 2.5
+            },
+            "toPosition": {
+                "x": -40.0,
+                "y": -10.0,
+                "z": 2.5
+            },
+            "connectionType": "pipe",
+            "modelName": null,
+            "rotation": null,
+            "scale": null,
+            "fromPort": null,
+            "toPort": null,
+            "group": null
+        },
+        {
+            "from": "Condenser",
+            "to": "Cooling Tower",
+            "fromPosition": {
+                "x": 62.5,
+                "y": -20.0,
+                "z": 3.0
+            },
+            "toPosition": {
+                "x": 120.0,
+                "y": -10.0,
+                "z": 5.0
+            },
+            "connectionType": "pipe",
+            "modelName": null,
+            "rotation": null,
+            "scale": null,
+            "fromPort": null,
+            "toPort": null,
+            "group": null
+        },
+        {
+            "from": "Cooling Tower",
+            "to": "Pump",
+            "fromPosition": {
+                "x": 120.0,
+                "y": -25.0,
+                "z": 2.5
+            },
+            "toPosition": {
+                "x": 80.0,
+                "y": -30.0,
+                "z": 2.5
+            },
+            "connectionType": "pipe",
+            "modelName": null,
+            "rotation": null,
+            "scale": null,
+            "fromPort": null,
+            "toPort": null,
+            "group": null
+        }
+    ]
+}
