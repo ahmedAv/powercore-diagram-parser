@@ -6,7 +6,7 @@ from openai import OpenAI
 
 # Initialize client
 client = OpenAI(
-    api_key="sk-svcacct-TlgBYJ-A7AViNWRTAvUam4-18-KceIUL5V3uOtnQOvIAiaLjwX5nzhduaxi7duNq52N_t0XT3BlbkFJ7GAlu0kewliG2aNOzmQefpDod50BCWH1h0pxTbrySiJfpM-moBnQLjQDhoWOjZO9V25juAA")
+    api_key="")
 
 
 # ==========================
