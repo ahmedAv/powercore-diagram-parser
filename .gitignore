@@ -15,4 +15,6 @@ venv/
 # Environment variables (DO NOT commit your credentials)
 .env
 
+# Dataset
+data
 
