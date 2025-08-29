@@ -8,6 +8,8 @@ Make sure you have the following installed:
 - Python 3.11 (recommended)
 - pip (Python package manager)
 - Virtual environment
+- Docker & Docker Compose (for containerized deployment)
+- OpenAI API Key
 
 ---
 
@@ -32,6 +34,14 @@ venv\Scripts\activate
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+###  34️⃣ Setup environment variables
+Create a `.env` file in the project root and add your OpenAI API key (and other required environment variables).  
+
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4.1
 ```
 
 ###  ▶️ Running the project
